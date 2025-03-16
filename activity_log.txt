@@ -1,0 +1,20 @@
+=== Activity Monitor Log Started at 2025-03-15 21:03:28.565802 ===
+
+[2025-03-15 21:03:28] [INFO] Activity monitoring started
+[2025-03-15 21:03:33] [INFO] Minimal activity: 0 keystrokes, 0 clicks
+[2025-03-15 21:03:38] [INFO] Minimal activity: 0 keystrokes, 0 clicks
+[2025-03-15 21:03:43] [INFO] Minimal activity: 0 keystrokes, 0 clicks
+[2025-03-15 21:03:48] [INFO] Minimal activity: 0 keystrokes, 3 clicks
+[2025-03-15 21:03:53] [INFO] Minimal activity: 0 keystrokes, 3 clicks
+[2025-03-15 21:03:58] [INFO] Minimal activity: 0 keystrokes, 3 clicks
+[2025-03-15 21:03:59] [INFO] Screen captured - no significant changes
+[2025-03-15 21:04:03] [INFO] Normal activity: 0 keystrokes, 5 clicks, 49 movements
+[2025-03-15 21:04:08] [INFO] Minimal activity: 0 keystrokes, 1 clicks
+[2025-03-15 21:04:13] [INFO] Normal activity: 0 keystrokes, 8 clicks, 35 movements
+[2025-03-15 21:04:18] [INFO] Minimal activity: 0 keystrokes, 0 clicks
+[2025-03-15 21:04:23] [INFO] Normal activity: 0 keystrokes, 4 clicks, 21 movements
+[2025-03-15 21:04:28] [INFO] Minimal activity: 0 keystrokes, 3 clicks
+[2025-03-15 21:04:29] [INFO] Screen captured - no significant changes
+[2025-03-15 21:04:33] [INFO] Normal activity: 0 keystrokes, 6 clicks, 15 movements
+[2025-03-15 21:04:38] [INFO] Minimal activity: 0 keystrokes, 0 clicks
+[2025-03-15 21:04:42] [INFO] Activity monitoring stopped

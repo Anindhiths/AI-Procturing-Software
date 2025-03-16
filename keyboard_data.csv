@@ -1,0 +1,5 @@
+cmd_c_count,cmd_v_count,cmd_x_count,cmd_z_count,cmd_a_count,ctrl_count,alt_tab_count,arrows_count,special_keys_ratio,avg_key_interval,key_variety,repeated_sequences,activity_type
+0,0,0,0,0,0,0,0,0.2702702702702703,0.5,0.1891891891891892,3,normal
+4,6,0,2,4,9,0,0,0.7647058823529411,0.5,0.1568627450980392,8,suspicious
+0,0,0,0,0,0,0,0,0.2702702702702703,0.5,0.1891891891891892,3,normal
+4,6,0,2,4,9,0,0,0.7647058823529411,0.5,0.1568627450980392,8,suspicious
