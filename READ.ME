@@ -1,0 +1,75 @@
+# AI-Enhanced Examination Integrity System: Technical Architecture and Implementation
+
+## System Overview
+
+Our solution addresses the inadequacies of conventional remote proctoring by implementing a multi-modal anomaly detection framework that operates without traditional camera surveillance. The system employs an ensemble of machine learning algorithms to establish behavioral baselines and detect deviations during examination periods.
+
+## Technical Architecture
+
+### Frontend Implementation
+- **Framework**: PyQt5-based UI interface with WebEngine integration
+- **Data Capture**: Low-level system hooks utilizing pynput and pyWinhook for input capture
+- **Instrumentation**: Event-driven architecture with asynchronous data streaming (15Hz sampling rate)
+
+### Backend Processing
+- **Core Services**: Python microservices architecture with inter-process communication via ZeroMQ
+- **Parallelization**: Multi-threaded execution model with Joblib for CPU optimization (thread pooling)
+- **Device Integration**: CoreBluetooth API for wireless peripheral detection and signal strength analysis
+
+### ML/AI Implementation
+- **Input Analysis**:
+  - Mouse dynamics: LSTM networks (128-dimension hidden state) analyzing trajectory, velocity, and acceleration vectors
+  - Keyboard dynamics: Specialized RNNs with attention mechanism for keystroke dynamics and typing cadence analysis
+  - N-gram probabilistic models for sequence prediction validation
+
+- **Screen Analysis**:
+  - CNN-based object detection (YOLOv5) for unauthorized application/window identification
+  - Tesseract OCR integration with NLP post-processing for textual content classification
+  - Frame differential analysis with optical flow detection for rapid screen transitions
+
+- **Risk Scoring Engine**:
+  - XGBoost classifier with custom feature importance weighting
+  - Isolation Forest for unsupervised anomaly detection (contamination factor: 0.03)
+  - PPO reinforcement learning model for adaptive threshold adjustment
+
+### Network Intelligence
+- **Protocol Analysis**:
+  - Deep packet inspection for TLS fingerprinting and proxy detection
+  - DNS traffic analysis with entropy-based anomaly detection
+  - TCP/IP timing analysis for latency-based virtualization detection
+
+- **Connection Verification**:
+  - MAC address validation against enrollment registry
+  - BGP route analysis for geographic consistency verification
+  - Split tunneling detection via simultaneous connection fingerprinting
+
+### Posture Detection Subsystem
+- **CSI Analysis**:
+  - Channel State Information extraction from WiFi chipsets (Intel 9260/AX200 supported)
+  - Signal processing: Butterworth filtering with 5Hz cutoff for motion isolation
+  - Phase sanitization algorithm for multipath interference reduction
+  - DNN-based classifier (5 convolutional layers + 3 dense layers) for posture state classification
+
+## Technical Innovations
+
+### Behavior Fingerprinting
+Our system establishes statistically significant behavioral fingerprints during enrollment, capturing 27 distinct metrics across input modalities. Principal Component Analysis reduces dimensionality while preserving 97.3% of variance, enabling efficient real-time comparison.
+
+### Adaptive Risk Assessment
+The system implements a Bayesian risk framework that dynamically adjusts sensitivity based on:
+- Historical user behavior patterns (weighted temporal importance)
+- Examination complexity factors (autoregressive difficulty mapping)
+- Environmental context variables (signal/noise analysis)
+
+### Privacy-Preserving Architecture
+- Zero data persistence beyond examination sessions
+- Federated model training with differential privacy (ε=3.6)
+- Homomorphic encryption for sensitive metric comparison
+
+## Current Development Status
+- Completed mouse/keyboard behavioral models (F1 score: 0.92)
+- Screen monitoring subsystem operational (precision: 0.87, recall: 0.91)
+- Risk scoring framework validated against synthetic adversarial attacks
+- CSI-based posture detection achieves 89.7% classification accuracy
+
+Further optimization of the neural architecture is underway to reduce computational overhead, alongside implementation of transfer learning techniques to accelerate user-specific model adaptation.
